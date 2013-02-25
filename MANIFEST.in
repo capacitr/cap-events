@@ -1,0 +1,3 @@
+recursive-include cap_events *
+recursive-include cap_events/templatetags *
+
