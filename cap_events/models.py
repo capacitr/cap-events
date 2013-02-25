@@ -2,6 +2,9 @@ from django.db import models
 
 from thumbnail_works.fields import EnhancedImageField
 
+from south.modelsinspector import add_introspection_rules
+add_introspection_rules([], ["^thumbnail_works\.fields\.EnhancedImageField"])
+
 class Event(models.Model):
     date = models.DateField()
     time = models.TimeField()
