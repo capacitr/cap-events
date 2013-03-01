@@ -7,7 +7,7 @@ class ImageInline(admin.TabularInline):
 
 class EventAdmin(admin.ModelAdmin):
     inlines = [ImageInline,]
-    list_display = ['user', 'name', 'description', 'date', 'time', 'show_sites', 'publish']
+    list_display = ['name', 'description', 'date', 'time', 'publish']
 
     prepopulated_fields = {'slug' : ('name',)}
 
