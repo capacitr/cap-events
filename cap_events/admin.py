@@ -11,5 +11,8 @@ class EventAdmin(admin.ModelAdmin):
 
     prepopulated_fields = {'slug' : ('name',)}
 
+class TagAdmin(admin.ModelAdmin):
+    list_display = ['tag', 'slug']
 
 admin.site.register(models.Event, EventAdmin)
+admin.site.register(models.Tag, TagAdmin)
